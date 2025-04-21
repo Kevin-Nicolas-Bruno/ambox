@@ -1,61 +1,64 @@
 body {
-    height: 100vh;
-    background:linear-gradient(to bottom, #020024, #090979 35%, #AB009D 100%);
+  height: 100vh;
+  background: linear-gradient(to bottom, #142b57, #184590 35%, #1361e2 100%);
   background-repeat: no-repeat;
   background-attachment: fixed; /* opcional: para que no se mueva al hacer scroll */
-  background-size: cover;       /* opcional: para que cubra toda la pantalla */
+  background-size: cover; /* opcional: para que cubra toda la pantalla */
   margin: 0;
 }
-.navbar{
-    position: fixed;
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-    z-index: 1000;
-    background-color: rgba(164, 79, 79, 0.1); /* blanco con opacidad */
-    backdrop-filter: blur(10px);
-    background-color: #333;
-    padding: 1rem 2rem;
-    height: 70px;
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end !important;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(164, 79, 79, 0.1); /* blanco con opacidad */
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  height: 70px;
 }
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
 }
 .nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 .nav-links li a:hover {
-    color: #00bcd4;
+  color: #00bcd4;
 }
-p{
-    color: white;
+p {
+  color: white;
 }
-.title-gradient{
-    font-size: 3rem;
-    font-weight: bold;
-    background: linear-gradient(to right, #2196f3, #2196f3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h1 {
+  color: #8ed2ff !important;
 }
-.container{
-    margin-top: 160px;
-    display: flex;
-    align-items: center;
-    max-width: 20%;
+h2 {
+  color: #08bdb4;
 }
-.container p{
-    padding-left: 20px;
-    font-size: 20px;
+.card-text {
+  color: black;
 }
 
-.perfil{
-    width: 130px;
-
+.card {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin-left: 40px;
+}
+.card-body {
+  display: block;
+  align-items: center;
+}
+.card-img-top {
+  width: 100px;
+}
+.perfil {
+  width: 250px;
 }
