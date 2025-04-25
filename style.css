@@ -59,6 +59,17 @@ h2 {
 .card-img-top {
   width: 100px;
 }
-.perfil {
-  width: 250px;
+.img-custom {
+  max-width: 300px;
+}
+.nombre {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cargo {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #142c57;
 }
