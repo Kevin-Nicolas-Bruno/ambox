@@ -24,29 +24,39 @@
         <li><a href="#sobre-mi">Sobre mi</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li class="me-2">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/kevin-nicolas-bruno-b65183213/"
+            >Linkedin</a
+          >
+        </li>
       </ul>
     </nav>
   </header>
   <body>
     <div class="container">
-      <div class="row">
-        <h1 class="title">Sobre mi</h1>
-        <div class="col-2 mt-5">
+      <div class="row d-flex align-items-center justify-content-center">
+        <h1 id="sobre-mi" class="title">Sobre mi</h1>
+        <div class="col-lg-3 col-md-2 mt-5">
           <img
-            class="max-width-150 d-block mx-auto mb-3 img-custom img-fluid"
+            class="perfil rounded-circle d-block mx-auto mb-3 img-fluid"
             src="img/perfil.png"
             alt="foto de perfil"
           />
         </div>
-        <div class="col-8 mt-5">
-          <h1 class="display-1 display-md-3 display-sm-4 nombre">
+        <div class="col-lg-3 col-md-12 mt-5">
+          <h1
+            class="display-1 display-md-3 display-sm-4 titulo maquina-escribir"
+          >
             Kevin Bruno
           </h1>
-          <h2 class="cargo">Fron-End developer</h2>
+          <h2 class="cargo glitch">FullStack developer</h2>
         </div>
+
         <div class="row align-items-center">
-          <div class="col d-flex justify-content-center">
-            <p class="text-center">
+          <div class="col-md-7 mx-auto text-center">
+            <p class="mt-5 fw-semibold">
               Soy una persona proactiva, organizada y con gran capacidad para el
               trabajo en equipo. Me adapto con facilidad a nuevos entornos y
               disfruto aprender constantemente. Cuento con sólidas habilidades
@@ -66,24 +76,96 @@
         </div>
       </div>
     </div>
-
-    <div class="card" style="width: 18rem">
-      <img
-        src="img/calculadora.png"
-        class="card-img-top img-thumbnail max-width-150"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">Calculadora</h5>
-        <p class="card-text">
-          Calculadora para operaciones simples como: suma,resta multiplicacion y
-          division, hecha con HTML5 CSS3 y JavaScript
-        </p>
-      </div>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
+    <div class="container mb-5">
+      <div class="row position-relative">
+        <h1 id="proyectos" class="title col-2">Proyectos</h1>
       </div>
     </div>
-    <footer></footer>
+    <div class="container d-flex flex-wrap">
+      <div class="row">
+        <div class="card mt-5 mb-3" style="width: 18rem">
+          <img src="img/chapeaux.png" class="card-img-top mt-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Control stock</h5>
+            <p class="card-text">
+              Aplicacion web para controlar el stock de los productos de un
+              restaurante
+            </p>
+            <a href="#" class="btn btn-primary">Ir</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card mt-5 mb-3" style="width: 18rem">
+          <img src="img/chapeaux.png" class="card-img-top mt-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Control stock</h5>
+            <p class="card-text">
+              Aplicacion web para controlar el stock de los productos de un
+              restaurante
+            </p>
+            <a href="#" class="btn btn-primary">Ir</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card mt-5 mb-3" style="width: 18rem">
+          <img src="img/chapeaux.png" class="card-img-top mt-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Control stock</h5>
+            <p class="card-text">
+              Aplicacion web para controlar el stock de los productos de un
+              restaurante
+            </p>
+            <a href="#" class="btn btn-primary" type="button">Ir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 id="contacto" class="title">Contactame!</h1>
+      <form class="p-4 rounded d-flex flex-column gap-3" action="">
+        <fieldset>
+          <div class="row g-3">
+            <div class="col-sm-12 mb-3">
+              <label for="nombre">Nombre:</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+                aria-label="Nombre"
+              />
+            </div>
+            <div class="col-sm-12 mb-3">
+              <label for="apellido">Apellido:</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Apellido"
+                aria-label="Apellido"
+              />
+            </div>
+            <div class="col-sm-12 mb-3">
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="E-mail"
+                aria-label="E-mail"
+              />
+            </div>
+          </div>
+
+          <button class="btn btn-primary" type="submit" value="Enviar">
+            Enviar
+          </button>
+        </fieldset>
+      </form>
+    </div>
+    <footer class="bg-black">
+      <p>Kevin Bruno</p>
+    </footer>
   </body>
 </html>

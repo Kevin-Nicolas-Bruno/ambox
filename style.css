@@ -36,11 +36,11 @@ body {
 p {
   color: white;
 }
-h1 {
+h2 {
   color: #8ed2ff !important;
 }
-h2 {
-  color: #08bdb4;
+h1 {
+  color: #08bdb4 !important;
 }
 .card-text {
   color: black;
@@ -62,14 +62,57 @@ h2 {
 .img-custom {
   max-width: 300px;
 }
-.nombre {
-  font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.perfil {
+  max-width: 200px !important;
 }
-.cargo {
+
+.cargo,
+.titulo {
   font-family: "Special Gothic Expanded One", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   color: #142c57;
+}
+.card {
+  background-color: #0077be !important;
+}
+form {
+  background-color: #d9eeff;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.btn {
+  background-color: black !important;
+  max-width: 100px !important;
+  width: 100px !important;
+}
+.glitch {
+  position: relative;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px 0 rgb(255, 255, 255), -2px -2px 0 rgb(0, 0, 0);
+  animation: glitch 4s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 2px 2px 0 rgb(78, 0, 97), -2px -2px 0 rgb(0, 0, 0);
+  }
+  20% {
+    text-shadow: -2px -2px 0 rgb(78, 0, 97), 2px 2px 0 rgb(0, 0, 0);
+  }
+  40% {
+    text-shadow: 3px -3px 0 rgb(78, 0, 97), -3px 3px 0 rgb(0, 0, 0);
+  }
+  60% {
+    text-shadow: -3px 3px 0 rgb(78, 0, 97), 3px -3px 0 rgb(0, 0, 0);
+  }
+  80% {
+    text-shadow: 4px 4px 0 rgb(78, 0, 97), -4px -4px 0 rgb(0, 0, 0);
+  }
+  100% {
+    text-shadow: -4px -4px 0 rgb(78, 0, 97), 4px 4px 0 rgb(0, 0, 0);
+  }
 }
