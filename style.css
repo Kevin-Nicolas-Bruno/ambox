@@ -42,6 +42,14 @@ h2 {
 h1 {
   color: #08bdb4 !important;
 }
+@media (max-width: 767.98px) {
+  .text-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Líneas a mostrar */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
 .card-text {
   color: black;
 }

@@ -56,24 +56,33 @@
 
         <div class="row align-items-center">
           <div class="col-md-7 mx-auto text-center">
-            <p class="mt-5 fw-semibold">
+            <p class="mt-5 fw-semibold text">
               Soy una persona proactiva, organizada y con gran capacidad para el
               trabajo en equipo. Me adapto con facilidad a nuevos entornos y
               disfruto aprender constantemente. Cuento con sólidas habilidades
               de comunicación, resolución de problemas y pensamiento crítico, lo
               que me permite aportar soluciones eficientes y colaborativas en
-              cualquier proyecto. En cuanto a mis habilidades técnicas, tengo
-              experiencia en [aquí podés personalizar: desarrollo web / análisis
-              de datos / gestión de proyectos, etc.], manejo avanzado de
-              herramientas como [ej: Excel, Python, Java, SQL, etc.], y
-              conocimientos sólidos en [aquí podés agregar metodologías,
-              herramientas, o conocimientos relevantes como Scrum, UX/UI, redes,
-              etc.]. Busco seguir creciendo profesionalmente en un entorno
-              dinámico donde pueda seguir desarrollando tanto mis competencias
-              técnicas como personales.
+              cualquier proyecto.
+              <span class="full-text d-none">
+                En cuanto a mis habilidades técnicas, tengo experiencia en [aquí
+                podés personalizar: desarrollo web / análisis de datos / gestión
+                de proyectos, etc.], manejo avanzado de herramientas como [ej:
+                Excel, Python, Java, SQL, etc.], y conocimientos sólidos en
+                [aquí podés agregar metodologías, herramientas, o conocimientos
+                relevantes como Scrum, UX/UI, redes, etc.]. Busco seguir
+                creciendo profesionalmente en un entorno dinámico donde pueda
+                seguir desarrollando tanto mis competencias técnicas como
+                personales.
+              </span>
             </p>
           </div>
         </div>
+        <button
+          class="btn p-0 d-md-none toggle-text text-white"
+          onclick="toggleText()"
+        >
+          Ver más
+        </button>
       </div>
     </div>
     <div class="container mb-5">
@@ -81,7 +90,7 @@
         <h1 id="proyectos" class="title col-2">Proyectos</h1>
       </div>
     </div>
-    <div class="container d-flex flex-wrap">
+    <div class="container d-flex flex-wrap justify-content-center">
       <div class="row">
         <div class="card mt-5 mb-3" style="width: 18rem">
           <img src="img/chapeaux.png" class="card-img-top mt-2" alt="..." />
@@ -172,4 +181,5 @@
       <p>Kevin Bruno</p>
     </footer>
   </body>
+  <script src="js.js"></script>
 </html>
