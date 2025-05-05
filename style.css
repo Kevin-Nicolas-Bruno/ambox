@@ -41,8 +41,95 @@ h2 {
 }
 h1 {
   color: #08bdb4 !important;
+
+  transition: text-shadow 0.3s ease;
+}
+.custom-mt {
+  margin-top: 80px;
+}
+
+h1:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.full-text {
+  display: inline;
+}
+.image-hover-container {
+  transition: all 0.4s ease;
+  height: 180px;
+  background: #f8f9fa;
+}
+
+.image-main {
+  transition: filter 0.4s ease;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.technologies-overlay {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  transition: opacity 0.4s ease;
+  overflow-y: auto;
+}
+
+.image-hover-container:hover .image-main {
+  filter: blur(4px);
+}
+
+.image-hover-container:hover .technologies-overlay {
+  opacity: 1;
+}
+@media (hover: hover) and (pointer: fine) {
+  .image-hover-container:hover .image-main {
+    filter: blur(4px);
+  }
+  .image-hover-container:hover .technologies-overlay {
+    opacity: 1;
+  }
+  .tech-icon:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Efecto para touch devices */
+.touch-hover:active .image-main,
+.touch-hover.active .image-main {
+  filter: blur(4px);
+}
+
+.touch-hover:active .technologies-overlay,
+.touch-hover.active .technologies-overlay {
+  opacity: 1;
+}
+
+/* Opcional: mantener visible después del tap */
+.touch-hover.active .technologies-overlay {
+  opacity: 1 !important;
+}
+
+.tech-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+  flex-shrink: 0;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
 }
 @media (max-width: 767.98px) {
+  .full-text {
+    display: none;
+  }
+
+  .full-text.visible {
+    display: inline;
+  }
   .text-content {
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Líneas a mostrar */
@@ -55,17 +142,48 @@ h1 {
 }
 
 .card {
-  display: flex;
-  align-items: center;
   width: 300px;
-  margin-left: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #222;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.card:hover {
+  transform: scale(1.05); /* Zoom del 5% */
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.3) !important; /* Sombra neón (opcional) */
+  z-index: 10; /* Asegura que la card escalada no se solape */
+}
+
 .card-body {
   display: block;
   align-items: center;
 }
 .card-img-top {
   width: 100px;
+}
+.card-light {
+  border: 2px solid transparent;
+  animation: borderLight 2s infinite linear;
+}
+
+@keyframes borderLight {
+  0% {
+    border-color: rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+  }
+  50% {
+    border-color: rgba(0, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.9), 0 0 40px rgba(0, 255, 255, 0.6);
+  }
+  100% {
+    border-color: rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+  }
 }
 .img-custom {
   max-width: 300px;

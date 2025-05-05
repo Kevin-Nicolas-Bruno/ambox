@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="app.scss" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -63,7 +64,7 @@
               de comunicación, resolución de problemas y pensamiento crítico, lo
               que me permite aportar soluciones eficientes y colaborativas en
               cualquier proyecto.
-              <span class="full-text d-none">
+              <span class="full-text sm-d-none">
                 En cuanto a mis habilidades técnicas, tengo experiencia en [aquí
                 podés personalizar: desarrollo web / análisis de datos / gestión
                 de proyectos, etc.], manejo avanzado de herramientas como [ej:
@@ -91,9 +92,80 @@
       </div>
     </div>
     <div class="container d-flex flex-wrap justify-content-center">
-      <div class="row">
-        <div class="card mt-5 mb-3" style="width: 18rem">
-          <img src="img/chapeaux.png" class="card-img-top mt-2" alt="..." />
+      <div class="col-12 col-sm-6 col-md-5 d-flex justify-content-center">
+        <div class="card mt-5 mb-3 card-light" style="width: 18rem">
+          <!-- Contenedor de la imagen con efecto hover -->
+          <div
+            class="image-hover-container position-relative overflow-hidden touch-hover"
+            style="height: 180px"
+          >
+            <!-- con object-fit-cover redimensiona la img, cubre  el contenedor y recorta excesos -->
+            <img
+              src="img/calculadora.png"
+              class="img-fluid object-fit-cover image-main"
+              alt="Proyecto Control Stock"
+            />
+
+            <!-- Contenedor de tecnologías (aparece al hacer hover) -->
+            <div
+              class="technologies-overlay w-100 h-100 position-absolute top-0 start-0 d-flex flex-wrap justify-content-center align-content-center p-2"
+            >
+              <img src="img/html.png" alt="HTML" class="tech-icon mx-2" />
+              <img src="img/css.png" alt="CSS" class="tech-icon mx-2" />
+              <img src="img/js.png" alt="JavaScript" class="tech-icon mx-2" />
+              <img
+                src="img/bootstrap.png"
+                alt="JavaScript"
+                class="tech-icon mx-2"
+              />
+            </div>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Calculadora</h5>
+            <p class="card-text">
+              Aplicacion web que permite hacer operaciones simples de una
+              calculadora
+            </p>
+            <a href="#" class="btn btn-primary">Ir</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-5 d-flex justify-content-center">
+        <div class="card mt-5 mb-3 card-light" style="width: 18rem">
+          <!-- Contenedor de la imagen con efecto hover -->
+          <div
+            class="image-hover-container position-relative overflow-hidden touch-hover"
+            style="height: 180px"
+          >
+            <!-- Imagen principal (se difumina al hacer hover) -->
+            <img
+              src="img/chapeaux.png"
+              class="img-fluid w-100 h-100 object-fit-cover image-main"
+              alt="Proyecto Control Stock"
+            />
+
+            <!-- Contenedor de tecnologías (aparece al hacer hover) -->
+            <div
+              class="technologies-overlay w-100 h-100 position-absolute top-0 start-0 d-flex flex-wrap justify-content-center align-content-center p-2"
+            >
+              <!-- Tus 3 imágenes de tecnologías -->
+              <img src="img/html.png" alt="HTML" class="tech-icon mx-2" />
+              <img src="img/css.png" alt="CSS" class="tech-icon mx-2" />
+              <img src="img/js.png" alt="JavaScript" class="tech-icon mx-2" />
+              <img
+                src="img/bootstrap.png"
+                alt="JavaScript"
+                class="tech-icon mx-2"
+              />
+              <img
+                src="img/angular.png"
+                alt="JavaScript"
+                class="tech-icon mx-2"
+              />
+            </div>
+          </div>
+
           <div class="card-body">
             <h5 class="card-title">Control stock</h5>
             <p class="card-text">
@@ -104,8 +176,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="card mt-5 mb-3" style="width: 18rem">
+      <!--<div class="col-12 col-sm-6 col-md-5 d-flex justify-content-center">
+        <div class="card mt-5 mb-3 card-light" style="width: 18rem">
           <img src="img/chapeaux.png" class="card-img-top mt-2" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Control stock</h5>
@@ -116,26 +188,45 @@
             <a href="#" class="btn btn-primary">Ir</a>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="card mt-5 mb-3" style="width: 18rem">
-          <img src="img/chapeaux.png" class="card-img-top mt-2" alt="..." />
+      </div> -->
+      <div class="col-12 col-sm-6 col-md-5 d-flex justify-content-center">
+        <div class="card mt-5 mb-3 card-light" style="width: 18rem">
+          <!-- Contenedor de la imagen con efecto hover -->
+          <div
+            class="image-hover-container position-relative overflow-hidden touch-hover"
+            style="height: 180px"
+          >
+            <!-- Imagen principal (se difumina al hacer hover) -->
+            <img
+              src="img/todolist.png"
+              class="img-fluid object-fit-cover image-main"
+              alt="Proyecto Control Stock"
+            />
+
+            <!-- Contenedor de tecnologías (aparece al hacer hover) -->
+            <div
+              class="technologies-overlay w-100 h-100 position-absolute top-0 start-0 d-flex flex-wrap justify-content-center align-content-center p-2"
+            >
+              <!-- Tus 3 imágenes de tecnologías -->
+              <img src="img/html.png" alt="HTML" class="tech-icon mx-2" />
+              <img src="img/css.png" alt="CSS" class="tech-icon mx-2" />
+              <img src="img/js.png" alt="JavaScript" class="tech-icon mx-2" />
+            </div>
+          </div>
+
           <div class="card-body">
-            <h5 class="card-title">Control stock</h5>
+            <h5 class="card-title">Todo-List</h5>
             <p class="card-text">
-              Aplicacion web para controlar el stock de los productos de un
-              restaurante
+              Aplicacion web para llevar un control de las tareas a realizar y
+              ya realizadas,consumiendo una API.
             </p>
-            <a href="#" class="btn btn-primary" type="button">Ir</a>
+
+            <a href="#" class="btn btn-primary">Ir</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <h1 class="tittle">Lenguajes y Skills</h1>
-      <div class="row"></div>
-    </div>
-    <div class="container">
+    <div class="container custom-mt">
       <h1 id="contacto" class="title">Contactame!</h1>
       <form class="p-4 rounded d-flex flex-column gap-3" action="">
         <fieldset>
